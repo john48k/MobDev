@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product">
+
+
+
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"/>
+            <!--  Category 1  -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:id="@+id/category1Header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Category 1" android:textSize="20sp" android:textStyle="bold" android:padding="16dp"/>
+                <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/category1Products" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <!--  Products for Category 1  -->
+                        <!--  Product 1  -->
+                        <LinearLayout android:id="@+id/product1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 1" android:textSize="18sp" android:textStyle="bold" android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $50" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product1"/>
+                        </LinearLayout>
+                        <!--  Product 2  -->
+                        <LinearLayout android:id="@+id/product2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 2" android:textSize="18sp" android:textStyle="bold" android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $60" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product2"/>
+                        </LinearLayout>
+                        <!--  Product 3  -->
+                        <LinearLayout android:id="@+id/product3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 3" android:textSize="18sp" android:textStyle="bold" android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $70" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product3"/>
+                        </LinearLayout>
+                        <!--  Product 4  -->
+                        <LinearLayout android:id="@+id/product4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 4" android:textSize="18sp" android:textStyle="bold" android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $80" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product4"/>
+                        </LinearLayout>
+                        <!--  Product 5  -->
+                        <LinearLayout android:id="@+id/product5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 5" android:textSize="18sp" android:textStyle="bold" android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $90" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product5"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <!--  Category 2  -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:id="@+id/category2Header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Category 2" android:textSize="20sp" android:textStyle="bold" android:padding="16dp"/>
+                <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/category2Products" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <!--  Products for Category 2  -->
+                        <!--  Product 1  -->
+                        <LinearLayout android:id="@+id/cat2productcat1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 1" android:textSize="18sp" android:textStyle="bold"  android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $50" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product6"/>
+                        </LinearLayout>
+                        <!--  Product 2  -->
+                        <LinearLayout android:id="@+id/cat2product2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 2" android:textSize="18sp" android:textStyle="bold"  android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $60" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product7"/>
+                        </LinearLayout>
+                        <!--  Product 3  -->
+                        <LinearLayout android:id="@+id/cat2product3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 3" android:textSize="18sp" android:textStyle="bold"  android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $70" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product8"/>
+                        </LinearLayout>
+                        <!--  Product 4  -->
+                        <LinearLayout android:id="@+id/cat2product4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 4" android:textSize="18sp" android:textStyle="bold"  android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $80" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product9"/>
+                        </LinearLayout>
+                        <!--  Product 5  -->
+                        <LinearLayout android:id="@+id/cat2product5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 5" android:textSize="18sp" android:textStyle="bold"  android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $90" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product10"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:id="@+id/category3Header" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Category 3" android:textSize="20sp" android:textStyle="bold" android:padding="16dp"/>
+                <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/category3Products" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                        <!--  Products for Category 3  -->
+                        <!--  Product 1  -->
+                        <LinearLayout android:id="@+id/cat3product1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 1" android:textSize="18sp" android:textStyle="bold"  android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $50" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product11"/>
+                        </LinearLayout>
+                        <!--  Product 2  -->
+                        <LinearLayout android:id="@+id/cat3product2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 2" android:textSize="18sp" android:textStyle="bold"  android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $60" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product12"/>
+                        </LinearLayout>
+                        <!--  Product 3  -->
+                        <LinearLayout android:id="@+id/cat3product3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 3" android:textSize="18sp" android:textStyle="bold" android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $70" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product13"/>
+                        </LinearLayout>
+                        <!--  Product 4  -->
+                        <LinearLayout android:id="@+id/cat3product4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 4" android:textSize="18sp" android:textStyle="bold"  android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $80" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product14"/>
+                        </LinearLayout>
+                        <!--  Product 5  -->
+                        <LinearLayout android:id="@+id/cat3product5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Product Name 5" android:textSize="18sp" android:textStyle="bold" android:clickable="true" android:onClick="searchProduct"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Price: $90" android:textSize="16sp" android:textColor="#808080" android:layout_marginTop="8dp"/>
+                            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add to Cart" android:layout_marginTop="8dp" android:id="@+id/button_add_to_cart_product15"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
