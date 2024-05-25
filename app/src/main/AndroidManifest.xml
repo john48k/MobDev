@@ -17,10 +17,19 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Additional activities -->
+        <activity android:name=".signup" android:exported="true" />
+        <activity android:name=".login" android:exported="true" />
+        <activity android:name=".ProfilePage" android:exported="true" />
+        <activity android:name=".Browser" android:exported="true" />
+        <activity android:name=".Direct" android:exported="true" />
+        <activity android:name=".product" android:exported="true" />
+        <activity android:name=".Add" android:exported="true" />
+        <activity android:name=".Order" android:exported="true" />
     </application>
 
 </manifest>

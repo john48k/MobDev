@@ -9,9 +9,8 @@ import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button b1,b2,b3,b4,b5,b6,b7,b8;
+    Button b1, b2, b3, b4, b5, b6, b7, b8;
 
-//    ConstraintLayout b2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,17 +26,15 @@ public class MainActivity extends AppCompatActivity {
         });
 
         b2 = findViewById(R.id.btnLogin);
-
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent1 = new Intent(MainActivity.this, login.class);
-                startActivity(intent1);
+                Intent intent2 = new Intent(MainActivity.this, login.class);
+                startActivity(intent2);
             }
         });
 
         b3 = findViewById(R.id.btnprofile);
-
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,9 +43,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         b4 = findViewById(R.id.btnBrowser);
-
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent4);
             }
         });
-        b5 = findViewById(R.id.btnMessage);
 
+        b5 = findViewById(R.id.btnMessage);
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,7 +78,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent7);
             }
         });
-
 
         b8 = findViewById(R.id.btnOrder);
         b8.setOnClickListener(new View.OnClickListener() {
