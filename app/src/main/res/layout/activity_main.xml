@@ -9,8 +9,8 @@
 
     <Button
         android:id="@+id/btnSignUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="124dp"
+        android:layout_height="45dp"
         android:text="1. SignUp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,9 +71,9 @@
 
     <Button
         android:id="@+id/btnAdd"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="148dp"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="132dp"
         android:layout_marginBottom="292dp"
         android:text="7. Add to cart"
         app:layout_constraintBottom_toBottomOf="parent"

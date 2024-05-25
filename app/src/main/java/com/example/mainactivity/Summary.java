@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -24,27 +25,29 @@ public class Summary extends AppCompatActivity {
         // Initialize textTotalPrice
         textTotalPrice = findViewById(R.id.text_total_price);
 
-        // Retrieve the selected products passed from the cart page
+        // Retrieve the selected products and prices passed from the cart page
         Bundle extras = getIntent().getExtras();
-        if (extras != null && extras.containsKey("selectedProducts")) {
-            // Get the list of selected products
+        if (extras != null && extras.containsKey("selectedProducts") && extras.containsKey("selectedPrices")) {
+            // Get the list of selected products and prices
             ArrayList<String> selectedProducts = extras.getStringArrayList("selectedProducts");
-            if (selectedProducts != null) {
-                // Display selected products in the summary layout
-                displaySummary(selectedProducts);
+            ArrayList<Double> selectedPrices = (ArrayList<Double>) extras.getSerializable("selectedPrices");
+
+            if (selectedProducts != null && selectedPrices != null && selectedProducts.size() == selectedPrices.size()) {
+                // Display selected products and prices in the summary layout
+                displaySummary(selectedProducts, selectedPrices);
             }
         }
     }
 
-    // Method to display selected products in the summary layout
-    private void displaySummary(ArrayList<String> selectedProducts) {
+    // Method to display selected products and prices in the summary layout
+    private void displaySummary(ArrayList<String> selectedProducts, ArrayList<Double> selectedPrices) {
         // Initialize total price
         double totalPrice = 0.00;
 
-        // Iterate through the list of selected products
-        for (String product : selectedProducts) {
-            // For demonstration purposes, let's assume all products have the same price
-            double productPrice = 20.12; // Change this value according to your actual product prices
+        // Iterate through the list of selected products and prices
+        for (int i = 0; i < selectedProducts.size(); i++) {
+            String product = selectedProducts.get(i);
+            double productPrice = selectedPrices.get(i);
 
             // Add the product to the summary layout
             addToSummary(product, productPrice);
@@ -54,7 +57,7 @@ public class Summary extends AppCompatActivity {
         }
 
         // Display the total price
-        textTotalPrice.setText(String.format("%.2f", totalPrice));
+        textTotalPrice.setText(String.format("$%.2f", totalPrice));
     }
 
     // Method to add item to the summary layout
