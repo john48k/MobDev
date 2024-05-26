@@ -55,7 +55,7 @@ public class Summary extends AppCompatActivity {
             // Update the total price
             totalPrice += productPrice;
         }
-//  na update na ni pa check
+//  updated na
         // Display the total price
         textTotalPrice.setText(String.format("$%.2f", totalPrice));
     }
