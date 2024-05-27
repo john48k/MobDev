@@ -29,7 +29,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textViewUsername"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="46dp"
         android:layout_marginTop="32dp"
         android:text="Direct Message" />
 
@@ -38,9 +39,128 @@
         android:id="@+id/buttonBrowse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/buttonDirectMessage"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_below="@id/textViewUsername"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="41dp"
         android:text="Browse Products" />
 
+    <!-- Horizontal Line -->
+    <View
+        android:id="@+id/horizontalLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/buttonDirectMessage"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/black" />
+    <TextView
+        android:id="@+id/purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalLine"
+
+        android:layout_marginTop="16dp"
+        android:text="My Purchases"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"  android:layout_below="@+id/purchase">
+
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/category1Products"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <!--  Products for Category 1  -->
+                <!--  Product 1  -->
+                <LinearLayout
+                    android:id="@+id/product1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <!--                            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/ic_launcher_background" android:scaleType="centerCrop"/>-->
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/keyboard" />
+                </LinearLayout>
+                <!--  Product 2  -->
+                <LinearLayout
+                    android:id="@+id/product2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/macbook" />
+
+                </LinearLayout>
+                <!--  Product 3  -->
+                <LinearLayout
+                    android:id="@+id/product3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/h1" />
+
+                </LinearLayout>
+                <!--  Product 4  -->
+                <LinearLayout
+                    android:id="@+id/product4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/h4" />
+                </LinearLayout>
+                <!--  Product 5  -->
+                <LinearLayout
+                    android:id="@+id/product5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/h5" />
+                </LinearLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/horizontalLine"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="326dp"
+        android:layout_marginEnd="155dp"
+        android:text="Logout" />
+
 </RelativeLayout>
+
